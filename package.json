@@ -1,14 +1,15 @@
 {
-	"name": "news-letter",
-	"private": true,
-	"version": "0.0.0",
-	"type": "module",
+	"name": "newsletter",
+	"version": "1.0.0",
+	"description": "![Design preview for the Newsletter sign-up form with success message coding challenge](./design/desktop-preview.jpg)",
 	"scripts": {
-		"start": "vite --open",
-		"build": "vite build",
-		"preview": "vite preview"
+		"start": "rm -rf dist/* && parcel src/*.html --open",
+		"build": "rm -rf dist/* && parcel build src/*.html --public-url ./"
 	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
 	"devDependencies": {
-		"vite": "^4.4.5"
+		"parcel": "^2.10.0"
 	}
 }
